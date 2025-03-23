@@ -60,14 +60,6 @@ cd booko
 
 3. Run the project
 - Simply open `index.html` in your web browser
-- Or use a local server:
-  ```bash
-  # Using Python
-  python -m http.server 8000
-  
-  # Using Node.js
-  npx http-server
-  ```
 
 ## Development
 
@@ -108,7 +100,7 @@ Experience BOOKO: [BOOKO](https://github.com/AhsanMunir01/BOOKO.git)
 
 **Your Name**
 - 📧 Email: ahsanmmunir@gmail.com
-- 🔗 GitHub: [@yourusername](https://github.com/AhsanMunir01)
+- 🔗 GitHub: [@AhsanMunir01](https://github.com/AhsanMunir01)
 -
 
 ## License
