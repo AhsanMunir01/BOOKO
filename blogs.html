@@ -1,0 +1,466 @@
+\practice web\blogs.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOKO - BLOGS</title>
+
+  <!-- custom style sheets -->
+  <link rel="stylesheet" href="styles/blogs.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/mediaQueries.css">
+  <link rel="stylesheet" href="styles/cursor.css">
+  <link rel="stylesheet" href="styles/topscrollindicator.css">
+
+  <!-- link to add favicon -->
+  <link rel="icon" href="./images/logo.png" type="image/png">
+
+  <!-- font awesome icons script -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- cursor -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- nav bar -->
+  <div class="nav-bar">
+    <div class="logo">
+      <img src="./images/logo.png" alt="BOOKO-logo" height="100px" width="150px">
+      <a href="./index.html">BOOKO</a>
+    </div>
+    <div class="nav-links">
+      <a href="./index.html" class="link">Home</a>
+      <a href="./products.html" class="link">Library</a>
+      <a href="./delivery.html" class="link">Delivery</a>
+      <a href="./catering.html" class="link active">Events</a>
+    </div>
+    <!-- Cart -->
+    <div class="cart">
+      <i class="fa fa-times close-cart" aria-hidden="true"></i>
+      <h1>Your Cart</h1>
+
+      <div class="no-empty-cart">
+        <ul class="cart-list-items">
+        </ul>
+        <div>
+          <div class="total">Sub Total: <span class="sub-total">$0</span></div>
+          <button>Check out</button>
+        </div>
+      </div>
+
+      <div class="empty-cart active">
+        <div class="empty-cart-img-div">
+            <img src="images/empty-cart.png" alt="Empty Cart" class="empty-cart-image" />
+        </div>
+        <p class="empty-cart-text">Your cart is empty!</p>
+        <p class="empty-cart-info">Like a bookshelf waiting to be filled! 📚</p>
+        <p class="empty-cart-info">Discover your next great read today!</p>
+      </div>
+    </div>
+
+    <div class="icons">
+      <div class="icon">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="icon">
+        <span class="i"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i> <span
+            class="no-of-cart-items">0</span></span>
+      </div>
+      <div class="icon">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="toggle-container aos-init aos-animate" data-aos="fade-down">
+      <input id="themeToggle" class="toggle" type="checkbox" />
+    </div>
+    <h1>
+      <center>Our Blogs</center>
+    </h1>
+
+    <div class="contributors-grid">
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>The History of Books: From Ancient Scrolls to Modern E-readers</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>The Evolution of Written Knowledge (3500 BC)<br>
+            <br>The earliest forms of books date back to around 3500 BC in Mesopotamia, where clay tablets were used to record information.<br>
+            <br>Around 2400 BC, the Egyptians began using papyrus scrolls, which revolutionized written communication.<br>
+            <br>The codex, a bound book with separate pages, emerged around the 1st century AD and gradually replaced scrolls.<br>
+            <br>These early books were handwritten and primarily housed in temples, royal palaces, and later monastic libraries.<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card ">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Top 10 Classic Novels Everyone Should Read</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Literature has given us countless masterpieces that have stood the test of time. While reading preferences vary widely, some books have earned their place in the literary canon through their profound impact, innovative storytelling, and timeless themes.<br>
+            <br>Whether you're a casual reader or a dedicated bibliophile, these classic novels will expand your literary horizons and provide insights into different eras and aspects of the human condition.<br>
+            <br>
+          <h3>Top 10 Classic Novels:</h3><br>
+          <b>1. Pride and Prejudice by Jane Austen<br>
+            2. To Kill a Mockingbird by Harper Lee<br>
+            3. 1984 by George Orwell<br>
+            4. The Great Gatsby by F. Scott Fitzgerald<br>
+            5. One Hundred Years of Solitude by Gabriel García Márquez<br>
+            6. Crime and Punishment by Fyodor Dostoevsky<br>
+            7. Jane Eyre by Charlotte Brontë<br>
+            8. Moby-Dick by Herman Melville<br>
+            9. The Catcher in the Rye by J.D. Salinger<br>
+            10. Wuthering Heights by Emily Brontë<br>
+          </b>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card ">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>How to Create the Perfect Home Library</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Creating a personal library at home is a dream for many book lovers. A well-designed home library not only stores your beloved collection but also creates a sanctuary for reading and reflection.<br>
+            <br>With thoughtful planning and organization, you can create a beautiful and functional space that showcases your literary treasures and invites you to explore them.<br>
+          </p>
+          <p>Getting Started:<br>
+          <ol>
+            <li>1. Choose the Right Space: Select a quiet area with good natural light but minimal direct sunlight that can damage books.</li>
+            <li>2. Invest in Quality Shelving: Consider the weight of books when selecting shelves—solid wood or metal shelving works best for durability.</li>
+            <li>3. Create a Comfortable Reading Nook: Include a comfortable chair, good lighting, and perhaps a small side table for your tea or coffee.</li>
+            <li>4. Organize Thoughtfully: Decide on a system that works for you—alphabetical, by genre, by color, or by read/unread status.</li>
+          </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Digital vs. Physical Books: Finding Your Perfect Reading Experience</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1577985043696-8bd54d9f093f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>With the rise of e-readers, tablets, and reading apps, the debate between digital and physical books has become increasingly relevant. Both formats offer unique advantages and challenges, and many readers find themselves using both depending on their circumstances.<br> 
+            <br>Understanding the benefits of each format can help you create the optimal reading experience for your lifestyle and preferences.<br></p>
+          <p><br>Physical Books: The Tactile Experience</p>
+          <p>Benefits:<br>
+          <ol>
+            <li>1. Sensory Experience: The feel of paper, the smell of books, and the visual presence on your shelf create a multi-sensory experience.</li>
+            <li>2. No Screen Time: Physical books provide a break from digital screens and the associated eye strain.</li>
+            <li>3. Better Retention: Studies suggest readers often remember information better when reading physical books.</li>
+            <li>4. No Battery Needed: Physical books never run out of power or require charging.</li>
+          </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Seasonal Reading Lists: Perfect Books for Every Time of Year</h2>
+          <img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Just as seasons change throughout the year, our reading preferences often shift to match the mood and atmosphere around us. From cozy winter reads to breezy summer stories, seasonal reading can enhance your connection to both literature and the natural world.<br>
+            <br>Here's a guide to the types of books that pair perfectly with each season, creating a harmonious reading experience year-round.<br></p>
+          <p><br>From atmospheric mysteries in autumn to light beach reads in summer, choosing books that complement the season can enhance your reading experience. Whether you're drawn to the setting, themes, or mood of a book, aligning your reading with the seasons creates a special harmony between your literary life and the world outside your window. Consider trying a seasonal reading approach to discover new favorites and experience familiar books in a fresh context!</p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>The Science of Reading: How Books Change Your Brain</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Reading is not just a leisure activity or a way to gather information—it's a complex cognitive process that physically changes your brain. Neuroscientists have made fascinating discoveries about what happens in our minds when we read, from the formation of new neural pathways to increased empathy and emotional intelligence.<br>
+            <br>Here's what happens in your brain when you read:<br>
+          </p>
+          <p>
+          <ol>
+            <li>1. Neural Networks: Reading creates and strengthens neural pathways, particularly in areas related to language processing, visualization, and understanding abstract concepts.</li>
+            <li>2. Cognitive Enhancement: Regular reading improves vocabulary, reasoning abilities, concentration, and memory over time.</li><br>
+          </ol>
+          </p>
+          <p>The cognitive benefits of reading extend beyond the immediate act itself. Regular readers tend to maintain better brain function throughout life, with reading serving as a form of mental exercise that preserves cognitive abilities and may even delay the onset of degenerative conditions like Alzheimer's disease.</p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Best Independent Bookstores Around the World: A Literary Traveler's Guide</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1526554850534-7c78330d5f90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Independent bookstores offer literary havens that chain stores simply can't match. Each has its own personality, curated selection, and unique atmosphere that reflects the passion of its owners and the character of its community.<br>
+            <br>For travelers who love books, visiting these literary landmarks can be as rewarding as traditional tourist attractions.<br>
+          </p>
+          <p>
+          <ol>
+            <li>1. Shakespeare and Company – Paris, France</li>
+            <li>2. Powell's City of Books – Portland, Oregon, USA</li>
+            <li>3. Livraria Lello – Porto, Portugal</li>
+            <li>4. Daunt Books – London, England</li>
+            <li>5. El Ateneo Grand Splendid – Buenos Aires, Argentina</li>
+            <li>6. Strand Book Store – New York City, USA</li>
+            <li>7. Boekhandel Dominicanen – Maastricht, Netherlands</li>
+          </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Mindful Reading: How to Get More from Every Book</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1488868935619-4483ed49a235?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>In an age of constant distractions and information overload, mindful reading offers a path to deeper comprehension, greater enjoyment, and meaningful personal growth through literature. By bringing focused attention and intention to your reading practice, you can transform a casual hobby into a powerful tool for intellectual and emotional development.<br>
+            <br>This guide explores techniques to enhance your reading experience through mindfulness principles.<br>
+          </p>
+          <p>
+          <ol>
+            <li>1. Create a Distraction-Free Environment</li>
+            <li>2. Set an Intention Before Reading</li>
+            <li>3. Practice Deep Reading</li>
+            <li>4. Engage with the Text Actively</li>
+            <li>5. Use All Your Senses</li>
+            <li>6. Take Thoughtful Breaks</li>
+          </ol>
+          </p>
+          <p>Mindful reading transforms the way we engage with books, allowing us to extract deeper meaning and personal insights from every text. By creating intentional reading habits, we can counter the fragmented attention patterns of modern life and rediscover the profound pleasure of getting lost in a good book. Whether you're reading for education or enjoyment, these mindfulness practices can enhance your reading experience and help you build a more meaningful relationship with literature.</p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Book Club Guide: How to Start and Run a Successful Reading Group</h2>
+          <img src="https://images.unsplash.com/photo-1529473814998-077b4fec6770?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Book clubs transform solitary reading into a social experience, creating opportunities for meaningful conversations, diverse perspectives, and deeper appreciation of literature. Whether you're looking to connect with friends, meet new people, or simply enhance your reading experience, starting a book club can be a rewarding endeavor.<br>
+            <br>This guide provides practical advice for creating and maintaining a vibrant reading group that members will look forward to attending.<br>
+          </p>
+          <p>
+          <ol>
+            <b>
+              <li>Define Your Book Club's Purpose and Style</li>
+              <li>Recruit the Right Mix of Members</li>
+              <li>Establish a Reading Schedule and Meeting Format</li>
+              <li>Select Books That Generate Discussion</li>
+              <li>Create a Welcoming Environment</li>
+              <li>Prepare Thoughtful Discussion Questions</li>
+              <li>Handle Challenging Dynamics with Grace</li>
+              <li>Keep the Group Fresh and Engaged</li>
+              <li>Consider Going Virtual or Hybrid</li>
+            </b>
+          </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>The Future of Publishing: Trends Shaping Books in 2024 and Beyond</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>The publishing industry continues to evolve rapidly, responding to technological innovations, changing reader preferences, and broader cultural shifts. Understanding these developments provides insight into how we'll discover, consume, and engage with books in the coming years.<br>
+            <br>This overview explores the key trends reshaping the world of books and what they mean for readers, authors, and publishers.<br>
+          </p>
+          <p><br>The future of publishing is characterized by diversity, technology, and a blending of formats and experiences. As the industry continues to evolve, readers will benefit from more choices in content, formats, and ways to discover and engage with books.<br>
+            <br>Publishers and authors who embrace these changes while maintaining a commitment to quality storytelling will likely thrive in this dynamic landscape. The fundamental joy of reading remains constant, even as the vehicles for delivering stories continue to transform.
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>The Psychology of Reading: Why We Love Books</h2>
+          <br>
+          <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>Reading is one of humanity's most enduring pastimes, offering pleasures and benefits that have captivated people for millennia. But what drives our love for books? Why do we find such comfort and joy in written stories and information?<br>
+            <br>This exploration delves into the psychological aspects behind our connection to books, examining the cognitive, emotional, and social reasons we're drawn to reading.<br>
+          </p>
+          <p><br>Our love for books stems from a complex interplay of psychological factors, from the cognitive benefits of mental stimulation to the emotional rewards of empathy and escapism.<br>
+            <br>Understanding these elements helps explain why reading remains a cherished activity despite the proliferation of other entertainment options. In essence, books satisfy fundamental human needs for story, connection, and meaning in uniquely powerful ways that continue to resonate across generations and cultures.
+          </p>
+        </div>
+      </div>
+
+      <div class="contributor-card">
+        <div id="" style="overflow:scroll; height:400px;">
+          <h2>Books and Social Media: How BookTok and Bookstagram Are Changing Reading Culture</h2>
+          <img src="https://images.unsplash.com/photo-1554522735-3ce253979d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+          <p>In recent years, social media platforms have transformed how readers discover, discuss, and experience books. Communities like BookTok (on TikTok) and Bookstagram (on Instagram) have emerged as powerful forces in the publishing industry, creating viral reading trends and revitalizing interest in literature among younger generations.<br>
+            <br>This guide examines how these social media phenomena are reshaping reading culture and influencing the book market.<br>
+          </p>
+          <p><br>Social media has fundamentally changed the way we engage with books, creating vibrant online communities where readers can share their passion for literature in creative and visually appealing ways. Platforms like BookTok and Bookstagram have democratized book recommendations, amplified diverse voices, and created new pathways to publishing success.<br>
+            <br>As these communities continue to evolve, they offer exciting opportunities for readers, authors, and publishers to connect and collaborate, ensuring that reading remains a relevant and dynamic cultural activity in the digital age.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Useful links</h4>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="gallary.html">Gallery</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="./faq.html" class="link">FAQ</a></li>
+          <li><a href="contributor.html">Our Contributors</a></li>
+          <li><a href="blogs.html">Our Blogs</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms&condition.html">Terms&Condition</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="links">
+          <li><a href="#">Mon-Sat : 9.00 AM to 9.30 PM</a></li>
+          <li><a href="#">Sunday : 9.00 AM to 3.00 PM</a></li>
+        </ul>
+        <h4 style="margin-top: 15px;">Locations</h4>
+        <ul class="links">
+          <li class="address1"><a href="" class="social"><i class="fa-solid fa-location-dot"></i> Kolathur ramankulam- Malappuram Dt</a></li>
+          <li class="address2"><a href="" class="social"><i class="fa-solid fa-location-dot"></i> MG Road, Bangalore - Karnataka</a></li>
+          <li class="address3"><a href="" class="social"><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi</a></li>
+          <li class="address4"><a href="" class="social"><i class="fa-solid fa-location-dot"></i> Park Street, Kolkata - West Bengal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Need Help?</h4>
+        <ul class="links">
+          <li><a href="" class="social"><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+          <li><a href="" class="social"><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+          <li><a href="" class="social"><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+        </ul>
+        <h4 style="margin-top: 15px;">Follow Us</h4>
+        <ul class="links">
+          <li><a href="https://www.facebook.com/" class="social"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/" class="social"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" class="social"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+          <li><a href="https://www.twitter.com/" class="social"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.whatsapp.com/" class="social"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <button class="scroll-button">
+    <img src="images/icecream-cone.png" alt="icecream-cone" />
+  </button>
+
+  <!-- copyright -->
+  <div class="copyright">
+    &copy; <span id="year"></span> by <span>DharshiB</span> | All Rights Reserved
+  </div>
+
+  <script src="./script/nav.js"></script>
+  <script src="./script/cart.js"></script>
+  <script src="./script/topscrollindicator.js"></script>
+  <script type="module" src="./script/products.js"></script>
+  <script src="script/topscrollindicator.js"></script>
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("goToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    });
+    // Dark mode (remains unchanged)
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleCheckbox = document.getElementById("themeToggle");
+      const body = document.body;
+
+      if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+        toggleCheckbox.checked = true;
+      } else {
+        toggleCheckbox.checked = false;
+      }
+
+      toggleCheckbox.addEventListener("change", () => {
+        if (toggleCheckbox.checked) {
+          body.classList.add("dark-mode");
+          localStorage.setItem("dark-mode", "enabled");
+        } else {
+          body.classList.remove("dark-mode");
+          localStorage.setItem("dark-mode", "disabled");
+        }
+      });
+    });
+  </script>
+  <script src="script/cursor.js"></script>
+  <script src="script/topscrollindicator.js"></script>
+</body>
+</html>

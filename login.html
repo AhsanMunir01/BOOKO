@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKO - LOGIN</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login-signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="styles/topscrollindicator.css">
+
+        <!-- link to add favicon -->
+        <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- cursor -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+   
+
+    <!-- scroll progress -->
+    <div class="scroll-progress"></div>
+
+    <a href="./index.html">
+
+        <div id="logo">
+            <img src="images/logo.png"
+                alt="logo"
+                height="150" width="200"></img>
+        </div>
+    </a>
+
+    <h1 style="margin-bottom: 10px;">Login to BOOKO</h1>
+    <form>
+        <div class="input-fields">
+            <!-- <div class="input-field-header">Email</div> -->
+            <input type="email" class="input-field" placeholder="Email" required>
+        </div>
+
+        <div class="input-fields">
+            <!-- <div class="input-field-header">Password</div> -->
+            <div class="password-container">
+                <input type="password" class="input-field" id="password-input-field" placeholder="Password" required>
+                <i style="margin-top: 5px;" class="fa-solid fa-eye-slash" id="toggle-password"></i>
+            </div>
+
+        </div>
+        <div class="check-container">
+            <div class="check-button">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </div>
+            <div class="forget-button">
+                <a href="#" id="forgot-password-link" style="color: var(--main-color);">Forgot your password?</a>
+            </div>
+        </div>
+        <div class="signin-btn">
+            <button>Sign in</button>
+        </div>
+    </form>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reset Password</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">Enter your email address and we'll send you a link to reset your password.</p>
+            
+            <form id="forgot-password-form">
+                <div class="input-fields">
+                    <input type="email" class="input-field" id="reset-email" placeholder="Email" required>
+                </div>
+                <div class="signin-btn">
+                    <button type="submit">Send Reset Link</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="line-container">
+        <br>
+        <span>Don't have an account?</span><a href="./signup.html" class="register-now-link">Create account</a>
+    </div>
+    <div class="sep-container">
+        <div class="sep-line"></div>
+        <div>
+            <p>or</p>
+        </div>
+        <div class="sep-line"></div>
+    </div>
+    <div class="social-link-2">
+        <a href=""><img src="images/social-icons/google.png" width="25px" height="25px"></a>
+        <a href=""><img src="images/social-icons/Facebook.svg" width="25px" height="25px"></a>
+    </div>
+
+    <script src="script/login.js"></script>
+    <script src="./script/nav.js"></script>
+    <script src="./script/topscrollindicator.js"></script>
+    <script src="script/cursor.js"></script>
+
+</body>
+
+</html>
