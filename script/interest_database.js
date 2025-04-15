@@ -7,7 +7,7 @@ const genres = [
     {
         id: "f002",
         name: "Non-Fiction",
-        image: "images/non-Fiction.jpg"
+        image: "images/non-fiction.jpg"
     },
     {
         id: "f003",
