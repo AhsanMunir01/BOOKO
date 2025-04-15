@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
             displayProducts(collection_list);
       }
-
 });
 
 function displayProducts(products) {
@@ -48,8 +47,13 @@ function displayProducts(products) {
                   <div class="off">-${product.off}%</div>
                   <img src="${product.image}" alt="">
                   <div class="cat-label">${flavorName}</div>
-                  <div class="quick-view-icon">
-                      <i class="fas fa-eye"></i>
+                  <div class="book-actions">
+                      <button class="wishlist-btn ${isInWishlist(product.id) ? 'active' : ''}" onclick="toggleWishlist('${product.id}')">
+                          <i class="fa fa-heart"></i>
+                      </button>
+                      <div class="quick-view-icon">
+                          <i class="fas fa-eye"></i>
+                      </div>
                   </div>
               </div>
               <div class="name-price">
@@ -81,7 +85,6 @@ function displayProducts(products) {
 
             productsSection?.appendChild(box);
       });
-
 }
 
 function displayFlavorFilter() {
@@ -514,4 +517,71 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show success message
         showToast('Book added successfully!');
     });
+});
+
+function createBookCard(book) {
+    return `
+        <div class="book-card">
+            <div class="book-image">
+                <img src="${book.image}" alt="${book.title}">
+                <div class="book-actions">
+                    <button class="wishlist-btn" onclick="addToWishlist(${JSON.stringify(book).replace(/"/g, '&quot;')})">
+                        <i class="fa fa-heart"></i>
+                    </button>
+                    <button class="add-to-cart-btn" onclick="addToCart('${book.id}')">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="book-info">
+                <h3>${book.title}</h3>
+                <p class="author">${book.author}</p>
+                <p class="price">$${book.price}</p>
+            </div>
+        </div>
+    `;
+}
+
+// Make wishlist functions globally accessible
+window.isInWishlist = function(productId) {
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    return wishlist.some(item => item.id === productId);
+}
+
+window.toggleWishlist = function(productId) {
+    const product = collection_list.find(item => item.id === productId);
+    if (!product) return;
+
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const isAlreadyInWishlist = wishlist.some(item => item.id === productId);
+
+    if (isAlreadyInWishlist) {
+        wishlist = wishlist.filter(item => item.id !== productId);
+        showToast('Removed from wishlist!');
+    } else {
+        wishlist.push(product);
+        showToast('Added to wishlist!');
+    }
+
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    updateWishlistCount();
+    
+    // Update the heart icon
+    const wishlistBtn = document.querySelector(`#${productId} .wishlist-btn i`);
+    if (wishlistBtn) {
+        wishlistBtn.classList.toggle('active');
+    }
+}
+
+window.updateWishlistCount = function() {
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const wishlistCount = document.querySelector('.wishlist-count');
+    if (wishlistCount) {
+        wishlistCount.textContent = wishlist.length;
+    }
+}
+
+// Initialize wishlist count when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    updateWishlistCount();
 });

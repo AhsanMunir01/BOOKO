@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/topscrollindicator.css">
-
+    <link rel="stylesheet" href="styles/cursor.css">
 
     <!-- link to add favicon -->
     <link rel="icon" href="./images/logo.png" type="image/png">
@@ -46,6 +46,10 @@
             <div class="icon">
                 <span class="i"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i> <span
                         class="no-of-cart-items">0</span></span>
+            </div>
+            <div class="icon">
+                <a href="./wishlist.html"><i class="fa fa-heart wishlist-icon" aria-hidden="true"></i> <span
+                        class="wishlist-count">0</span></a>
             </div>
             <div class="icon">
                 <i class="fa fa-bars menu" aria-hidden="true"></i>
@@ -180,11 +184,25 @@
     <!-- Toaster -->
     <div id="toast-container" class="toast-container"></div>
 
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="script/collection.js"></script>
     <script type="module" src="script/nav.js"></script>
     <script type="module" src="script/cart.js"></script>
     <script src="script/topscrollindicator.js"></script>
+    <script src="script/cursor.js"></script>
 </body>
 
 </html>

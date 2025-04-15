@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="styles/style3.css">
     <link rel="stylesheet" href="styles/cursor.css">
@@ -25,6 +26,19 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
     <!-- cursor
     <div class="circle"></div>
     <div class="circle"></div>
@@ -69,6 +83,10 @@
             <div class="icon">
                 <span class="i"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i> <span
                         class="no-of-cart-items">0</span></span>
+            </div>
+            <div class="icon">
+                <a href="./wishlist.html"><i class="fa fa-heart wishlist-icon" aria-hidden="true"></i> <span
+                        class="wishlist-count">0</span></a>
             </div>
             <div class="icon">
                 <i class="fa fa-bars menu" aria-hidden="true" id="menu-icon"></i>
@@ -122,6 +140,19 @@
             <div class="grid-box"></div>
             <div class="grid-box"></div>
             <div class="grid-box"></div>
+        </div>
+    </section>
+
+    <!-- Trending Books Slider -->
+    <section class="trending-books">
+        <h1>Trending Books</h1>
+        <div class="swiper trending-swiper">
+            <div class="swiper-wrapper">
+                <!-- Books will be dynamically added here -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -351,6 +382,27 @@
     </section>
     
 
+    <!-- Wishlist Preview -->
+    <section class="wishlist-preview" id="wishlistPreview">
+        <h1>My Wishlist</h1>
+        <div class="wishlist-preview-container">
+            <div class="empty-wishlist active">
+                <div class="empty-wishlist-img-div">
+                    <img src="images/empty-wishlist.png" alt="Empty Wishlist" class="wishlist-image" />
+                </div>
+                <p class="empty-wishlist-text">Your wishlist is empty!</p>
+                <p class="empty-wishlist-info">Start adding books to your wishlist!</p>
+                <a href="./collections.html" class="browse-books-btn">Browse Books</a>
+            </div>
+            <div class="wishlist-preview-items">
+                <!-- Wishlist items will be dynamically added here -->
+            </div>
+            <div class="view-all-wishlist">
+                <a href="./wishlist.html" class="view-all-btn">View All Wishlist Items</a>
+            </div>
+        </div>
+    </section>
+
     <!-- contact -->
     <section class="contact" id="contact">
         <h1>Contact Us</h1>
@@ -492,8 +544,11 @@
    
     <script type="module" src="script/interest_section.js"></script>
     <!-- <script src="script/cursor.js"></script> -->
+    <script src="script/cursor.js"></script>
     <script src="script/script.js"></script>
     <script type="module" src="script/cart.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="script/trending-books.js"></script>
 
 </body>
 

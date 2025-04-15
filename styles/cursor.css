@@ -1,0 +1,14 @@
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease;
+}
+
+* {
+  cursor: none;
+} 

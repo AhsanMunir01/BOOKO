@@ -730,3 +730,238 @@ input[type="email"] {
         border-width: 8px;
     }
 }
+
+.wishlist-preview {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.wishlist-preview h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.wishlist-preview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wishlist-preview-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.wishlist-preview-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.wishlist-preview-item:hover {
+    transform: translateY(-5px);
+}
+
+.wishlist-preview-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.wishlist-preview-item h3 {
+    margin: 0.5rem 0;
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.wishlist-preview-item .price {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.view-all-wishlist {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.trending-books {
+    padding: 4rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.trending-books h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.trending-swiper {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.trending-book-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-book-card:hover {
+    transform: translateY(-5px);
+}
+
+.trending-book-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.trending-book-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-btn i {
+    color: #666;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+    background: white;
+}
+
+.wishlist-btn.active i {
+    color: #ff4444;
+}
+
+.wishlist-btn:hover i {
+    color: #ff4444;
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trending-book-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-book-title {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.trending-book-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.trending-book-price {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.trending-book-button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.trending-book-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Swiper Navigation Styles */
+.trending-swiper .swiper-button-next,
+.trending-swiper .swiper-button-prev {
+    color: var(--main-color);
+}
+
+.trending-swiper .swiper-pagination-bullet-active {
+    background-color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .trending-books {
+        padding: 2rem 1rem;
+    }
+
+    .trending-book-image {
+        height: 200px;
+    }
+}
